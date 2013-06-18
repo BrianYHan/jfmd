@@ -867,13 +867,21 @@ h4 small {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 105, ../sass/_type.scss */
+/* line 99, ../sass/_type.scss */
+.section-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  line-height: 120%;
+  font-size: 60px;
+}
+
+/* line 110, ../sass/_type.scss */
 ul, ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
 
-/* line 109, ../sass/_type.scss */
+/* line 114, ../sass/_type.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -881,25 +889,25 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 115, ../sass/_type.scss */
+/* line 120, ../sass/_type.scss */
 li {
   line-height: 20px;
 }
 
-/* line 120, ../sass/_type.scss */
+/* line 125, ../sass/_type.scss */
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-/* line 127, ../sass/_type.scss */
+/* line 132, ../sass/_type.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
 }
-/* line 131, ../sass/_type.scss */
+/* line 136, ../sass/_type.scss */
 ul.inline > li,
 ol.inline > li {
   display: inline-block;
@@ -910,28 +918,28 @@ ol.inline > li {
   padding-right: 5px;
 }
 
-/* line 140, ../sass/_type.scss */
+/* line 145, ../sass/_type.scss */
 dl {
   margin-bottom: 20px;
 }
 
-/* line 143, ../sass/_type.scss */
+/* line 148, ../sass/_type.scss */
 dt,
 dd {
   line-height: 20px;
 }
 
-/* line 147, ../sass/_type.scss */
+/* line 152, ../sass/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 150, ../sass/_type.scss */
+/* line 155, ../sass/_type.scss */
 dd {
   margin-left: 10px;
 }
 
-/* line 154, ../sass/_type.scss */
+/* line 159, ../sass/_type.scss */
 .dl-horizontal {
   *zoom: 1;
 }
@@ -945,7 +953,7 @@ dd {
 .dl-horizontal:after {
   clear: both;
 }
-/* line 156, ../sass/_type.scss */
+/* line 161, ../sass/_type.scss */
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -955,12 +963,12 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 163, ../sass/_type.scss */
+/* line 168, ../sass/_type.scss */
 .dl-horizontal dd {
   margin-left: 180px;
 }
 
-/* line 172, ../sass/_type.scss */
+/* line 177, ../sass/_type.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -968,43 +976,43 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 180, ../sass/_type.scss */
+/* line 185, ../sass/_type.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 186, ../sass/_type.scss */
+/* line 191, ../sass/_type.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 192, ../sass/_type.scss */
+/* line 197, ../sass/_type.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
-/* line 196, ../sass/_type.scss */
+/* line 201, ../sass/_type.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 17.5px;
   font-weight: 300;
   line-height: 1.25;
 }
-/* line 202, ../sass/_type.scss */
+/* line 207, ../sass/_type.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
-/* line 206, ../sass/_type.scss */
+/* line 211, ../sass/_type.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
-/* line 212, ../sass/_type.scss */
+/* line 217, ../sass/_type.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -1012,21 +1020,21 @@ blockquote.pull-right {
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-/* line 218, ../sass/_type.scss */
+/* line 223, ../sass/_type.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
-/* line 223, ../sass/_type.scss */
+/* line 228, ../sass/_type.scss */
 blockquote.pull-right small:before {
   content: '';
 }
-/* line 226, ../sass/_type.scss */
+/* line 231, ../sass/_type.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 234, ../sass/_type.scss */
+/* line 239, ../sass/_type.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -1034,7 +1042,7 @@ blockquote:after {
   content: "";
 }
 
-/* line 242, ../sass/_type.scss */
+/* line 247, ../sass/_type.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -8284,5 +8292,421 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
+  }
+}
+/* line 4, ../sass/styles.scss */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 16, ../sass/styles.scss */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px;
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+}
+
+/* Remove border and change up box shadow for more contrast */
+/* line 30, ../sass/styles.scss */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Downsize the brand/project name a bit */
+/* line 38, ../sass/styles.scss */
+.navbar .brand {
+  padding: 14px 20px 16px;
+  /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar links: increase padding for taller navbar */
+/* line 46, ../sass/styles.scss */
+.navbar .nav > li > a {
+  padding: 15px 20px;
+}
+
+/* Offset the responsive button for proper vertical alignment */
+/* line 51, ../sass/styles.scss */
+.navbar .btn-navbar {
+  margin-top: 10px;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+/* line 61, ../sass/styles.scss */
+.carousel {
+  margin-bottom: 60px;
+  min-width: 100%;
+}
+
+/* line 66, ../sass/styles.scss */
+.carousel .container {
+  position: relative;
+  z-index: 9;
+}
+
+/* line 71, ../sass/styles.scss */
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10;
+}
+
+/* line 81, ../sass/styles.scss */
+.carousel .item {
+  height: 600px;
+}
+
+/* line 84, ../sass/styles.scss */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 600px;
+}
+
+/* line 92, ../sass/styles.scss */
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 6500px;
+  padding: 0 20px;
+  margin-top: 200px;
+}
+
+/* line 99, ../sass/styles.scss */
+.carousel-caption h1,
+.carousel-caption .lead {
+  margin: 0;
+  line-height: 1.25;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 106, ../sass/styles.scss */
+.carousel-caption .btn {
+  margin-top: 10px;
+}
+
+/* ACCORDION CONTENT
+-------------------------------------------------- */
+/* line 113, ../sass/styles.scss */
+.accordion-heading {
+  position: relative;
+}
+
+/* line 117, ../sass/styles.scss */
+.accordion-bevel {
+  background: #0b0b0b;
+}
+
+/* line 121, ../sass/styles.scss */
+.accordion-size-0 {
+  background-color: #8b8b8b;
+  height: 2px;
+}
+
+/* line 126, ../sass/styles.scss */
+.accordion-size-1 {
+  background-color: #6b6b6b;
+  height: 4px;
+}
+
+/* line 131, ../sass/styles.scss */
+.accordion-size-2 {
+  background-color: #4b4b4b;
+  height: 8px;
+}
+
+/* line 136, ../sass/styles.scss */
+.accordion-size-3 {
+  background-color: #2b2b2b;
+  height: 12px;
+}
+
+/* line 140, ../sass/styles.scss */
+.accordion-category-description {
+  opacity: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  text-align: right;
+  position: absolute;
+  display: block;
+  top: 5px;
+  height: 40px;
+  right: 10px;
+  color: #4c002e;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  max-width: 300px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22fcfe', endColorstr='#f11198',GradientType=1 );
+  /* IE6-9 */
+  transition-property: background-color, opacity, color;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+  /* Firefox 4 */
+  -moz-transition-property: background-color, opacity, color;
+  -moz-transition-duration: .5s;
+  -moz-transition-timing-function: ease-out;
+  /* Safari and Chrome */
+  -webkit-transition-property: background-color, opacity, color;
+  -webkit-transition-duration: .5s;
+  -webkit-transition-timing-function: ease-out;
+  /* Opera */
+  -o-transition-property: background-color, opacity, color;
+  -o-transition-duration: .5s;
+  -o-transition-timing-function: ease-out;
+}
+
+/* line 175, ../sass/styles.scss */
+a.accordion-toggle:hover .accordion-category-description,
+a.accordion-toggle.active .accordion-category-description {
+  opacity: 1;
+}
+
+/* line 180, ../sass/styles.scss */
+.accordion-category-description p {
+  margin-bottom: 0;
+}
+
+/* line 183, ../sass/styles.scss */
+.accordion-heading a.accordion-toggle {
+  display: block;
+  font-size: 36px;
+  line-height: 34px;
+  margin-top: 1px;
+  padding: 8px 30px 2px;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  background: #0b0b0b;
+  transition-property: background-color, opacity, color;
+  transition-duration: .4s;
+  transition-timing-function: ease-out;
+  /* Firefox 4 */
+  -moz-transition-property: background-color, opacity, color;
+  -moz-transition-duration: .4s;
+  -moz-transition-timing-function: ease-out;
+  /* Safari and Chrome */
+  -webkit-transition-property: background-color, opacity, color;
+  -webkit-transition-duration: .4s;
+  -webkit-transition-timing-function: ease-out;
+  /* Opera */
+  -o-transition-property: background-color, opacity, color;
+  -o-transition-duration: .4s;
+  -o-transition-timing-function: ease-out;
+}
+
+/* line 208, ../sass/styles.scss */
+a.accordion-toggle:hover {
+  color: #2b2b2b;
+}
+
+/*
+section.portfolio-accordion:hover a.accordion-toggle,
+a.accordion-toggle.inactive {
+    opacity: 1;
+}
+*/
+/* line 219, ../sass/styles.scss */
+section.portfolio-accordion:hover a.accordion-toggle:hover,
+a.accordion-toggle.active {
+  color: #0b0b0b;
+  background: #22fcfe;
+  background: -moz-linear-gradient(left, #22fcfe 0%, #f11198 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #22fcfe), color-stop(100%, #f11198));
+  background: -webkit-linear-gradient(left, #22fcfe 0%, #f11198 100%);
+  background: -o-linear-gradient(left, #22fcfe 0%, #f11198 100%);
+  background: -ms-linear-gradient(left, #22fcfe 0%, #f11198 100%);
+  background: linear-gradient(to right, #22fcfe 0%, #f11198 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#22fcfe', endColorstr='#f11198',GradientType=1 );
+}
+
+		/*
+
+		a.accordion-toggle.active {
+		    opacity: 1 !important;
+		}
+		*/
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* line 244, ../sass/styles.scss */
+.marketing .span4 {
+  text-align: center;
+}
+
+/* line 247, ../sass/styles.scss */
+.marketing h2 {
+  font-weight: normal;
+}
+
+/* line 250, ../sass/styles.scss */
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Featurettes
+------------------------- */
+/* line 259, ../sass/styles.scss */
+.featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* line 262, ../sass/styles.scss */
+.featurette {
+  padding-top: 120px;
+  /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden;
+  /* Vertically center images part 2: clear their floats. */
+}
+
+/* line 266, ../sass/styles.scss */
+.featurette-image {
+  margin-top: -120px;
+  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+/* line 271, ../sass/styles.scss */
+.featurette-image.pull-left {
+  margin-right: 40px;
+}
+
+/* line 274, ../sass/styles.scss */
+.featurette-image.pull-right {
+  margin-left: 40px;
+}
+
+/* Thin out the marketing headings */
+/* line 279, ../sass/styles.scss */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 979px) {
+  /* line 293, ../sass/styles.scss */
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto;
+  }
+
+  /* line 297, ../sass/styles.scss */
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0;
+  }
+
+  /* line 302, ../sass/styles.scss */
+  .carousel .item {
+    height: 500px;
+  }
+
+  /* line 305, ../sass/styles.scss */
+  .carousel img {
+    width: auto;
+    height: 500px;
+  }
+
+  /* line 310, ../sass/styles.scss */
+  .featurette {
+    height: auto;
+    padding: 0;
+  }
+
+  /* line 314, ../sass/styles.scss */
+  .featurette-image.pull-left,
+  .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 326, ../sass/styles.scss */
+  .navbar-inner {
+    margin: -20px;
+  }
+
+  /* line 330, ../sass/styles.scss */
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  /* line 337, ../sass/styles.scss */
+  .carousel .item {
+    height: 300px;
+  }
+
+  /* line 340, ../sass/styles.scss */
+  .carousel img {
+    height: 300px;
+  }
+
+  /* line 343, ../sass/styles.scss */
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px;
+  }
+
+  /* line 348, ../sass/styles.scss */
+  .carousel-caption h1 {
+    font-size: 30px;
+  }
+
+  /* line 351, ../sass/styles.scss */
+  .carousel-caption .lead,
+  .carousel-caption .btn {
+    font-size: 18px;
+  }
+
+  /* line 356, ../sass/styles.scss */
+  .marketing .span4 + .span4 {
+    margin-top: 40px;
+  }
+
+  /* line 360, ../sass/styles.scss */
+  .featurette-heading {
+    font-size: 30px;
+  }
+
+  /* line 363, ../sass/styles.scss */
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
   }
 }

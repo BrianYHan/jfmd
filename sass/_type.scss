@@ -96,7 +96,12 @@ h4 small { font-size: $baseFontSize; }
   border-bottom: 1px solid $grayLighter;
 }
 
-
+.section-header{
+  padding-bottom: ($baseLineHeight / 2) - 1;
+  margin: $baseLineHeight 0 ($baseLineHeight * 1.5);
+  line-height: 120%;
+  font-size:60px;
+}
 
 // Lists
 // --------------------------------------------------

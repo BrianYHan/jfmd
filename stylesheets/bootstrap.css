@@ -867,13 +867,21 @@ h4 small {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 105, ../sass/_type.scss */
+/* line 99, ../sass/_type.scss */
+.section-header {
+  padding-bottom: 9px;
+  margin: 20px 0 30px;
+  line-height: 120%;
+  font-size: 60px;
+}
+
+/* line 110, ../sass/_type.scss */
 ul, ol {
   padding: 0;
   margin: 0 0 10px 25px;
 }
 
-/* line 109, ../sass/_type.scss */
+/* line 114, ../sass/_type.scss */
 ul ul,
 ul ol,
 ol ol,
@@ -881,25 +889,25 @@ ol ul {
   margin-bottom: 0;
 }
 
-/* line 115, ../sass/_type.scss */
+/* line 120, ../sass/_type.scss */
 li {
   line-height: 20px;
 }
 
-/* line 120, ../sass/_type.scss */
+/* line 125, ../sass/_type.scss */
 ul.unstyled,
 ol.unstyled {
   margin-left: 0;
   list-style: none;
 }
 
-/* line 127, ../sass/_type.scss */
+/* line 132, ../sass/_type.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
 }
-/* line 131, ../sass/_type.scss */
+/* line 136, ../sass/_type.scss */
 ul.inline > li,
 ol.inline > li {
   display: inline-block;
@@ -910,28 +918,28 @@ ol.inline > li {
   padding-right: 5px;
 }
 
-/* line 140, ../sass/_type.scss */
+/* line 145, ../sass/_type.scss */
 dl {
   margin-bottom: 20px;
 }
 
-/* line 143, ../sass/_type.scss */
+/* line 148, ../sass/_type.scss */
 dt,
 dd {
   line-height: 20px;
 }
 
-/* line 147, ../sass/_type.scss */
+/* line 152, ../sass/_type.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 150, ../sass/_type.scss */
+/* line 155, ../sass/_type.scss */
 dd {
   margin-left: 10px;
 }
 
-/* line 154, ../sass/_type.scss */
+/* line 159, ../sass/_type.scss */
 .dl-horizontal {
   *zoom: 1;
 }
@@ -945,7 +953,7 @@ dd {
 .dl-horizontal:after {
   clear: both;
 }
-/* line 156, ../sass/_type.scss */
+/* line 161, ../sass/_type.scss */
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -955,12 +963,12 @@ dd {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 163, ../sass/_type.scss */
+/* line 168, ../sass/_type.scss */
 .dl-horizontal dd {
   margin-left: 180px;
 }
 
-/* line 172, ../sass/_type.scss */
+/* line 177, ../sass/_type.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -968,43 +976,43 @@ hr {
   border-bottom: 1px solid white;
 }
 
-/* line 180, ../sass/_type.scss */
+/* line 185, ../sass/_type.scss */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 186, ../sass/_type.scss */
+/* line 191, ../sass/_type.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
-/* line 192, ../sass/_type.scss */
+/* line 197, ../sass/_type.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
-/* line 196, ../sass/_type.scss */
+/* line 201, ../sass/_type.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 17.5px;
   font-weight: 300;
   line-height: 1.25;
 }
-/* line 202, ../sass/_type.scss */
+/* line 207, ../sass/_type.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
-/* line 206, ../sass/_type.scss */
+/* line 211, ../sass/_type.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
-/* line 212, ../sass/_type.scss */
+/* line 217, ../sass/_type.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -1012,21 +1020,21 @@ blockquote.pull-right {
   border-right: 5px solid #eeeeee;
   border-left: 0;
 }
-/* line 218, ../sass/_type.scss */
+/* line 223, ../sass/_type.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
-/* line 223, ../sass/_type.scss */
+/* line 228, ../sass/_type.scss */
 blockquote.pull-right small:before {
   content: '';
 }
-/* line 226, ../sass/_type.scss */
+/* line 231, ../sass/_type.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 234, ../sass/_type.scss */
+/* line 239, ../sass/_type.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -1034,7 +1042,7 @@ blockquote:after {
   content: "";
 }
 
-/* line 242, ../sass/_type.scss */
+/* line 247, ../sass/_type.scss */
 address {
   display: block;
   margin-bottom: 20px;
