@@ -5,6 +5,7 @@
       </footer>
 
     <script src="javascripts/jquery.js"></script>
+     <script src="javascripts/bootstrap.js"></script>
     <script src="javascripts/bootstrap-transition.js"></script>
     <script src="javascripts/bootstrap-alert.js"></script>
     <script src="javascripts/bootstrap-modal.js"></script>
@@ -13,7 +14,7 @@
     <script src="javascripts/bootstrap-tab.js"></script>
     <script src="javascripts/bootstrap-tooltip.js"></script>
     <script src="javascripts/bootstrap-popover.js"></script>
-    <script src="javascriptss/bootstrap-button.js"></script>
+    <script src="javascripts/bootstrap-button.js"></script>
     <script src="javascripts/bootstrap-collapse.js"></script>
     <script src="javascripts/bootstrap-carousel.js"></script>
     <script src="javascripts/bootstrap-typeahead.js"></script>
@@ -26,3 +27,6 @@
       }(window.jQuery)
     </script>
     <script src="javascripts/holder.js"></script>
+
+</body>
+</html>

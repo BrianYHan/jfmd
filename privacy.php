@@ -1,12 +1,12 @@
 <?php
 $meta_name = "JFMD";
 $content= "BLAH";
-$title = "Blog";
-$page = 'blog';
+$title = "Privacy";
+$page = 'privacy';
 require_once 'header.php';     
 include("header.php"); ?>
 
 
 <?php include("footer.php"); ?>
-
+  </body>
 </html>

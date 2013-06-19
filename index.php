@@ -2,6 +2,7 @@
 $meta_name = "JFMD";
 $content= "BLAH";
 $title = "James Franklin Marketing and Designs";
+$page = 'index';
 require_once 'header.php';     
 include("header.php"); ?>
 
@@ -53,7 +54,7 @@ Standard Intro Package for New Business's 1 year of Hosting 5 Pages of Professio
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container marketing" style="padding-bottom:80px">
+    <div class="marketing" style="padding-bottom:80px">
       <h1 class="section-header text-center">What We Do<small> Web Design, SEO, Branding, and Marketing Solutions</small></h1>
 
       <!-- Three columns of text below the carousel -->
@@ -121,7 +122,7 @@ Standard Intro Package for New Business's 1 year of Hosting 5 Pages of Professio
       <hr class="featurette-divider">
 
 
-      <div class="container marketing">
+      <div class=" marketing" >
       <h1 class="text-center section-header">Don't take our word for it!<p class="muted"> Our customers tell you how we helped them grow</p></h1>
 
       <!-- Three columns of text below the carousel -->
@@ -252,5 +253,7 @@ Standard Intro Package for New Business's 1 year of Hosting 5 Pages of Professio
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 <?php include("footer.php"); ?>
-  </body>
+
+
+
 </html>
